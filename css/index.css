@@ -159,12 +159,21 @@ li a {
   font-size: 3rem;
   text-align: center;
 }
-h3,
-p {
-  padding: 1em;
+.jumbotron h4,
+.jumbotron p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+.jumbotron button {
+  width: 90px;
+  padding: 0.5em;
+  border-radius: 10%;
+  background: #656569;
+  color: #dddddd;
 }
 h3 {
-  font-size: 4rem;
+  padding-top: 2rem;
 }
 p {
   font-size: 1.8rem;
@@ -173,26 +182,50 @@ h4 {
   font-size: 2rem;
   margin-top: 5rem;
 }
-button {
-  width: 90px;
-  padding: 0.5em;
-  border-radius: 10%;
-  background: burlywood;
-}
-table,
-th,
-td {
-  border: 1px solid black;
-}
-td {
-  padding: 0.5rem;
-  font-size: 1.8rem;
-}
-table {
+.skills {
   width: 35rem;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .middle {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .middle {
+    flex-direction: column;
+  }
+}
+.middle h4,
+.middle p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+.middle table,
+.middle th,
+.middle td {
+  border: 0.1rem solid black;
+}
+.middle td {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+}
+.bottom table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.bottom td,
+.bottom th {
+  border: 0.1rem solid #dddddd;
+  text-align: left;
+  padding: 0.8rem;
+}
+.bottom tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.bottom td {
+  padding: 0.5rem;
+  font-size: 1.8rem;
 }
