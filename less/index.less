@@ -4,164 +4,248 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-:root{
-	max-width: 868px;
-	margin: 0 auto;
-	font-size:62.5%
+:root {
+  max-width: 868px;
+  margin: 0 auto;
+  font-size: 62.5%;
 }
 
-html, body {
-	height: 100%;
-	
-	
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @import "color.less";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+
 @fontsizesmall: 1rem;
 @fontsizemedium: 1.5rem;
 @fontsizemediumextra: 2rem;
 /* navigation bar */
 ul {
-	display: flex;
-	margin: @fontsizesmall;
-	justify-content: flex-end;
+  display: flex;
+  margin: @fontsizesmall;
+  justify-content: flex-end;
 }
 li a {
-	text-decoration: none;
-	padding: 0.2rem;
-	color: black;
-	font-weight: bold;
-	font-size: @fontsizemediumextra;
-	
+  text-decoration: none;
+  padding: 0.2rem;
+  color: black;
+  font-weight: bold;
+  font-size: @fontsizemediumextra;
 }
 /*jumbotron*/
 .jumbotron {
-	background: @primarycolor;
-	height: 50%;
-	font-size: 3rem;
-	text-align: center;
-	h4 , p{
-		padding-top: @fontsizesmall;
-		padding-bottom: @fontsizesmall;
-		padding-right: @fontsizemediumextra;
-	}
-	button {
-		width: 90px;
-		padding: 0.5em;
-		border-radius: 10%;
-		background: rgb(101, 101, 105);
-		color: #dddddd;
-	}
-	
+  background: @primarycolor;
+  height: 50%;
+  font-size: 3rem;
+  text-align: center;
+  h4,
+  p {
+    padding-top: @fontsizesmall;
+    padding-bottom: @fontsizesmall;
+    padding-right: @fontsizemediumextra;
+  }
+  button {
+    width: 90px;
+    padding: 0.5em;
+    border-radius: 10%;
+    background: rgb(101, 101, 105);
+    color: #dddddd;
+  }
 }
 h3 {
-	padding-top: @fontsizemediumextra;
+  padding-top: @fontsizemediumextra;
 }
-
 
 p {
-	font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 h4 {
-	font-size: @fontsizemediumextra;
-	margin-top: 5rem;
+  font-size: @fontsizemediumextra;
+  margin-top: 5rem;
 }
 
 .skills {
-	width: 35rem;
-	margin-top: @fontsizemedium;
-	margin-bottom: @fontsizemedium;
+  width: 35rem;
+  margin-top: @fontsizemedium;
+  margin-bottom: @fontsizemedium;
 }
+/*middle content*/
 .middle {
-	display: flex;
-	justify-content: space-between;
-	@media screen and (max-width:500px) {
-		flex-direction: column;
-	}
-	h4 , p{
-		padding-top: @fontsizesmall;
-		padding-bottom: @fontsizesmall;
-		padding-right: @fontsizemediumextra;
-	}
-	
-table, th, td {
-	border: 0.1rem solid @secondarycolor;
-	
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  h4,
+  p {
+    padding-top: @fontsizesmall;
+    padding-bottom: @fontsizesmall;
+    padding-right: @fontsizemediumextra;
+  }
+
+  table,
+  th,
+  td {
+    border: 0.1rem solid @secondarycolor;
   }
   td {
-	  padding: 0.5rem;
-	  font-size: 1.8rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
   }
-	
 }
-
-
-  .bottom {
-	table {
-		font-family: arial, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-	  }
-	  
-	  td, th {
-		border: 0.1rem solid @intermediatecolor;
-		text-align: left;
-		padding: 0.8rem;
-	  }
-	  
-	  tr:nth-child(even) {
-		background-color: @intermediatecolor;
-	  }
-	  td {
-		padding: 0.5rem;
-		font-size: 1.8rem;
-	}
+/*bottom coontent*/
+.bottom {
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
   }
+
+  td,
+  th {
+    border: 0.1rem solid @intermediatecolor;
+    text-align: left;
+    padding: 0.8rem;
+  }
+
+  tr:nth-child(even) {
+    background-color: @intermediatecolor;
+  }
+  td {
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+}
