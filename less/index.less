@@ -49,6 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
@@ -63,6 +64,7 @@ html, body {
 	
 	
 }
+@import "color.less";
 @fontsizesmall: 1rem;
 @fontsizemedium: 1.5rem;
 @fontsizemediumextra: 2rem;
@@ -82,7 +84,7 @@ li a {
 }
 /*jumbotron*/
 .jumbotron {
-	background: rgb(241, 240, 240);
+	background: @primarycolor;
 	height: 50%;
 	font-size: 3rem;
 	text-align: center;
@@ -131,7 +133,7 @@ h4 {
 	}
 	
 table, th, td {
-	border: 0.1rem solid black;
+	border: 0.1rem solid @secondarycolor;
 	
   }
   td {
@@ -150,13 +152,13 @@ table, th, td {
 	  }
 	  
 	  td, th {
-		border: 0.1rem solid #dddddd;
+		border: 0.1rem solid @intermediatecolor;
 		text-align: left;
 		padding: 0.8rem;
 	  }
 	  
 	  tr:nth-child(even) {
-		background-color: #dddddd;
+		background-color: @intermediatecolor;
 	  }
 	  td {
 		padding: 0.5rem;
